@@ -1,0 +1,251 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153680748-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153680748-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153680748-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153680748-2');
+</script>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<meta http-equiv=Content-Type content="text/html; charset=windows-874">
+
+<html>
+<HEAD>
+<TITLE>ระบบบริการการศึกษา</TITLE>
+<link rel="stylesheet" type="text/css" href="style/STYLE.css">
+<link rel="stylesheet" type="text/css" href="images/App_Themes/Aqua/Web/stylesx.css" />
+<link rel="stylesheet" type="text/css" href="images/App_Themes/HatchedGray/Web/stylesx.css" />
+<script src="style/popupmenu/SpryMenuBar.js" type="text/javascript"></script>
+<link href="style/popupmenu/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+</HEAD>
+<div id="waitDiv" style="position:absolute;visibility:hidden"><img id="waitIMG" src=images/common/misc/Loading.gif></div>
+<script type="text/javascript"> 
+		function windowwidth() {
+		  if (navigator.userAgent.indexOf("MSIE") > 0) w=document.body.clientWidth;
+		  else w=window.outerWidth;
+		  return w;
+		}
+		function windowheight() {
+		  if (navigator.userAgent.indexOf("MSIE") > 0) h=document.body.clientHeight;
+		  else h= window.outerHeight;
+		  return h;
+		}
+		var DHTML = (document.getElementById || document.all || document.layers);
+		if (DHTML) {
+		  var obj=document.getElementById("waitDiv");
+		  obj.style.left=(windowwidth()-waitIMG.width)/2;
+		  obj.style.top=(windowheight()-waitIMG.height)/2;
+		}
+		function ap_getObj(name) { 
+		  if (document.getElementById) { 
+			return document.getElementById(name).style; 
+		  } else if (document.all) { 
+			return document.all[name].style; 
+		  } else if (document.layers) { 
+			return document.layers[name]; 
+		  } 
+		} 
+		function ap_showWaitMessage(div, flag) { 
+		  if (!DHTML) return; 
+		  var x = ap_getObj(div); x.visibility = (flag) ? 'visible':'hidden'
+		} 
+
+		ap_showWaitMessage('waitDiv', 1); //แสดงในครั้งแรก
+</script>		<script type="text/javascript">
+
+			function chk_lang(langid,xpage){
+					var i_lang=langid; 
+					var x = xpage;
+						
+						if (x!="enrollpoint.asp")
+						{
+													
+						
+						document.cookie = "CKLANG=" +i_lang+ ";";
+						document.FRM_LANG.submit();
+						}
+
+					}   
+		</script>
+<body onload="ap_showWaitMessage('waitDiv', 0);">
+<div align="center">
+
+<div id="wrapper" >
+<table  border="0" cellspacing="0" cellpadding="0" width="753px" bgcolor="#FFFFFF"> 
+<tr>
+<td valign="top" >
+	<div id="content" width="100%">		
+		<div id="header">
+		</div>   
+	</div>
+
+
+<div id="page">
+<FORM METHOD=POST ACTION="" NAME=FRM_LANG></FORM>
+
+<table width="930"  height ="0" border="0" cellpadding="0" cellspacing="0" bordercolor="green" bgcolor="#3B3B3B">
+<tr valign="left">
+	   <td align="left">
+		  <div class="container" >
+
+                <!--  Start MenuBar -->
+
+					<ul id="MenuBar1" class="MenuBarHorizontal">
+
+					 <li><a class="MenuBarItemSubmenu" href="#">&nbsp;&nbsp;&nbsp;</a><ul><li><a href=http://regis.rmu.ac.th/registrar/logout.asp?avs125418272=5>ออกจากระบบ</a></li></ul></li>
+							<li><a class="MenuBarItemSubmenu" href="#">ภาษาไทย&nbsp;&nbsp;</a>
+						
+							<ul>
+								<li><a href="#" Onclick="return chk_lang(0,'grade.asp')">ภาษาไทย</a></li>
+								<li><a href="#"  Onclick="return chk_lang(1,'grade.asp')">English</a></li>		
+								
+							</ul>
+						</ul>
+
+				<!--  End MenuBar -->
+          </div>	
+
+	  </td>
+</tr>
+
+<table height="2px" width="930px"  border="0" cellpadding="0" cellspacing="0" bordercolor="#FFBA00" bgcolor="#FFBA00">
+<tr>
+	 <td></td>
+</tr>
+</table>
+
+<table border= 0 width="100%" height ="100%" cellpadding="0" cellspacing="0" bordercolor=red>
+<tr VALIGN=TOP>
+
+
+
+<script type="text/javascript">
+	var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"style/popupmenu/SpryMenuBarDown.gif", imgRight:"style/popupmenu/SpryMenuBarRight.gif"});
+</script>
+<script type="text/javascript">
+
+	var popupWindow=null; 
+ 
+	function child_open(in_url,in_w,in_h){  
+		var x = in_url; 
+		var width="750", height="500";
+		var left = (screen.width/2) - in_w/2;
+		var top = (screen.height/2) - in_h/2;
+		var styleStr = 'width='+in_w+',height='+in_h+',scrollbars=yes,status=no,left='+left+',top='+top+',screenX='+left+',screenY='+top;
+		popupWindow = window.open(x,"Upload_File",styleStr); 
+	//document.getElementById("dx").className = 'parentDisable';
+	} 
+
+	function parent_disable(){ 
+	if(popupWindow && !popupWindow.closed) 
+	popupWindow.focus(); 	
+	} 
+
+</SCRIPT>
+
+<!-- Begin Menu -->
+<td width="200px">
+
+	<div id="title" class="boxed">
+		<h2 class="title">เมนูหลัก</h2>
+	</div>
+	<div id="menu" class="style4">
+		<ul>
+<li><A HREF=student.asp?avs125418272=6>ถอยกลับ</a></li>
+<!-- End Menu -->
+<BR>
+<CENTER><IMG SRC=data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCADIAKADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD8h6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo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 WIDTH=165 ALT=Photo></CENTER>
+			</ul>
+	</div>			
+</td>
+
+<!-- End Menu -->
+
+
+<!-- Begin Page Detail -->
+<!-- แบนเนอร์ของมหาวิทยาลัย -->
+<td width="730" valign="top">
+<TABLE BORDER=0 CELLSPACING=2 CELLPADDING=0 class='username'><TR><TD WIDTH=10></TD><TD>663110070218 : นางสาววราภรณ์ ภูครองนาค</TD></TR></TABLE><IMG SRC=images/common/line/horz_1.gif WIDTH=437 HEIGHT=7><DIV ALIGN=CENTER><DIV ALIGN=LEFT><TABLE  BORDER=0 CELLSPACING=0 CELLPADDING=0 class='normaldetail'><TR ><TD width=20></TD><TD >แสดงข้อมูล</b>&nbsp;&nbsp;</td><td><a href=grade.asp?avs125418272=7><B>ทั้งหมด</B></A>&nbsp;&nbsp;&nbsp<img src =images/common/button/pull_right_1.gif>&nbsp;&nbsp;|&nbsp;<A HREF=grade.asp?avs125418272=8&gradeacadyear=2566><b>2566</b></A> : <A HREF=grade.asp?avs125418272=9&gradeacadyear=2566&gradesemester=1><B>1</B>.</A> <A HREF=grade.asp?avs125418272=10&gradeacadyear=2566&gradesemester=2><B>2</B>.</A> &nbsp;|&nbsp;<A HREF=grade.asp?avs125418272=11&gradeacadyear=2567><b>2567</b></A> : <A HREF=grade.asp?avs125418272=12&gradeacadyear=2567&gradesemester=1><B>1</B>.</A> |</td></tr><tr><td></td><td></td><td><a href=grade.asp?avs125418272=13&trialgrade=1><font size=2>รายวิชาที่ไม่มีเกรด / ใช้หลักสูตรทดสอบเกรด</A></TD></TR></TABLE><TABLE BORDER=0 bordercolor=red WIDTH=100% ><TR><TD WIDTH=10></TD><TD><TABLE BORDER=0 bordercolor=yellow WIDTH=600 CELLSPACING=2 CELLPADDING=0 class='normaldetail'><TR BGCOLOR=#000080 class='tableheaderdetail'><TD COLSPAN=5 ALIGN=CENTER NOWRAP><B>ภาคการศึกษาที่ 1/2566</TD></TR><TR BGCOLOR=#E0E0FF VALIGN=center><TD ALIGN=CENTER HEIGHT=20 class='normaldetail'><b>รหัสวิชา</TD><TD ALIGN=CENTER NOWARP><B>ชื่อวิชา</TD><TD ALIGN=CENTER><B>กลุ่มวิชา</TD><TD ALIGN=CENTER><B>หน่วยกิต</TD><TD ALIGN=CENTER><B>เกรด</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;1097101-1</TD><TD WIDTH=450>ทักษะการพูดและการฟังภาษาอังกฤษ</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;1097103-1</TD><TD WIDTH=450>พลเมืองที่เข้มแข็ง</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;1099101-1</TD><TD WIDTH=450>คุณธรรม จริยธรรม จรรยาบรรณและจิตวิญญาณความเป็นครู</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;1099102-1</TD><TD WIDTH=450>ภาษาเพื่อการสื่อสาร</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;2011114-1</TD><TD WIDTH=450>ชีววิทยาพื้นฐาน</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;2015121-2</TD><TD WIDTH=450>ฟิสิกส์ 1</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;2017104-1</TD><TD WIDTH=450>คณิตศาสตร์พื้นฐาน</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR></TABLE><TABLE WIDTH=70% bgcolor=#D0D0D0 BORDER=0 CELLSPACING=0 CELLPADDING=0><tr><td><TABLE BORDER=0 bordercolor=blue WIDTH=600 COLS=6 CELLSPACING=1 CELLPADDING=0 class='normaldetail'><TR VALIGN=TOP BGCOLOR=#F6F0F0><TD colspan=5  bgcolor=#D0D0D0></TD><TD COLSPAN=5 align=center bgcolor=#E0E0E0 ><FONT  color=#5050A0><b> ผลการศึกษา :<font COLOR = #506070>ปกติ<b></FONT></TD></TR><TR height=20><TD bgcolor=#D0D0D0  COLSPAN=5 align=center width =50% >THIS SEMESTER</TD><TD bgcolor=#E0E0E0 COLSPAN=5 align=center width =50% ><b>CUMULATIVE TO THIS SEMESTER</TD></TR><TR BGCOLOR=#FFFFFF><TD ALIGN=CENTER bgcolor=#F0F7F7>C.Register</B><BR>21</TD><TD ALIGN=CENTER bgcolor=#F0F7F7>C.Earn</B><BR>21</TD><TD ALIGN=CENTER bgcolor=#F0F7F7>CA</B><BR>21</TD><TD ALIGN=CENTER bgcolor=#F0F7F7>GP</B><BR>84</TD><TD ALIGN=CENTER bgcolor=#F0F7F7>GPA</B><BR>4.00</TD><TD ALIGN=CENTER><B>C.Register</B><BR>21</TD><TD ALIGN=CENTER><B>C.Earn</B><BR>21</TD><TD ALIGN=CENTER><B>CA</B><BR>21</TD><TD ALIGN=CENTER><B>GP</B><BR>84</TD><TD ALIGN=CENTER><B>GPA</B><BR>4.00</TD></TR></TABLE></td></tr></table><BR><TABLE BORDER=0 WIDTH=90% ></TABLE><TABLE BORDER=0 bordercolor=yellow WIDTH=600 CELLSPACING=2 CELLPADDING=0 class='normaldetail'><TR BGCOLOR=#000080 class='tableheaderdetail'><TD COLSPAN=5 ALIGN=CENTER NOWRAP><B>ภาคการศึกษาที่ 2/2566</TD></TR><TR BGCOLOR=#E0E0FF VALIGN=center><TD ALIGN=CENTER HEIGHT=20 class='normaldetail'><b>รหัสวิชา</TD><TD ALIGN=CENTER NOWARP><B>ชื่อวิชา</TD><TD ALIGN=CENTER><B>กลุ่มวิชา</TD><TD ALIGN=CENTER><B>หน่วยกิต</TD><TD ALIGN=CENTER><B>เกรด</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;1097102-1</TD><TD WIDTH=450>ภาษาไทยเพื่อการสื่อสาร</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;B</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;1099103-1</TD><TD WIDTH=450>จิตวิทยาสำหรับครู</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;1099104-1</TD><TD WIDTH=450>การพัฒนาหลักสูตร</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;2010164-1</TD><TD WIDTH=450>เคมีพื้นฐาน</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;B+</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;2015120-1</TD><TD WIDTH=450>คณิตศาสตร์สำหรับฟิสิกส์ 1</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;D</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;2015122-1</TD><TD WIDTH=450>ฟิสิกส์ 2</TD><TD WIDTH=70 ALIGN=CENTER>-</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR><TR VALIGN=TOP BGCOLOR=#F6F6FF><TD WIDTH=100>&nbsp;&nbsp;&nbsp;216640323-1</TD><TD WIDTH=450>พลังงานทดแทน</TD><TD WIDTH=70 ALIGN=CENTER>500</TD><TD WIDTH=70 ALIGN=CENTER>3</TD><TD WIDTH=50 ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;A</TD></TR></TABLE><TABLE WIDTH=70% bgcolor=#D0D0D0 BORDER=0 CELLSPACING=0 CELLPADDING=0><tr><td><TABLE BORDER=0 bordercolor=blue WIDTH=600 COLS=6 CELLSPACING=1 CELLPADDING=0 class='normaldetail'><TR VALIGN=TOP BGCOLOR=#F6F0F0><TD colspan=5  bgcolor=#D0D0D0></TD><TD COLSPAN=5 align=center bgcolor=#E0E0E0 ><FONT  color=#5050A0><b> ผลการศึกษา :<font COLOR = #506070>ปกติ<b></FONT></TD></TR><TR height=20><TD bgcolor=#D0D0D0  COLSPAN=5 align=center width =50% >THIS SEMESTER</TD><TD bgcolor=#E0E0E0 COLSPAN=5 align=center width =50% ><b>CUMULATIVE TO THIS SEMESTER</TD></TR><TR BGCOLOR=#FFFFFF><TD ALIGN=CENTER bgcolor=#F0F7F7>C.Register</B><BR>21</TD><TD ALIGN=CENTER bgcolor=#F0F7F7>C.Earn</B><BR>21</TD><TD ALIGN=CENTER bgcolor=#F0F7F7>CA</B><BR>21</TD><TD ALIGN=CENTER bgcolor=#F0F7F7>GP</B><BR>70.5</TD><TD ALIGN=CENTER bgcolor=#F0F7F7>GPA</B><BR>3.36</TD><TD ALIGN=CENTER><B>C.Register</B><BR>42</TD><TD ALIGN=CENTER><B>C.Earn</B><BR>42</TD><TD ALIGN=CENTER><B>CA</B><BR>42</TD><TD ALIGN=CENTER><B>GP</B><BR>154.5</TD><TD ALIGN=CENTER><B>GPA</B><BR>3.68</TD></TR></TABLE></td></tr></table><BR><TABLE BORDER=0 WIDTH=90% ></TABLE><TABLE BORDER=0 bordercolor=blue WIDTH=600 COLS=6 CELLSPACING=1 CELLPADDING=0 class='headerdetail'><TR BGCOLOR=#000080 class='tableheaderdetail'><TD COLSPAN=4 ALIGN=CENTER >ภาคการศึกษาที่ 1/2567</TD></TR></TABLE><TABLE BORDER=0 WIDTH=80% CELLSPACING=2 CELLPADDING=2><TR BGCOLOR=#FA8072><TD ALIGN=CENTER><FONT SIZE=2><B> กรุณาประเมินการสอนอาจารย์ให้เรียบร้อยก่อน จึงจะสามารถดูผลการเรียนได้ </B><BR></TD></TR></TABLE><TABLE BORDER=0 WIDTH=90% ><FONT FACE= "Tahoma, Arial, Helvetica" SIZE=1 ><b>หมายเหตุ</b><li>เกรดที่แสดง จะทำการคำนวนเกรดรายวิชา สะสมยอดต่อเนื่องเพื่อให้ให้เห็นการเคลื่อนไหวของยอดแต้มคะแนน<li>สำหรับรายการที่แสดงใน Transcript จะถือค่าที่ได้คำนวนเก็บไว้ ณ วันสิ้นภาค เป็นค่าที่พิมพ์ใน Transcript</TABLE></TD></TR></TABLE></DIV></DIV>
+<!-- End Page Detail -->
+<td height=400></td></tr>
+</table>
+<table border = 0  bordercolor = red width="100%" cellpadding="0" cellspacing="0">
+<div style="clear:both"></div>
+</div>
+<TR>
+<td align ="center" width="201px"><font face =tahome COLOR=BLUE size=2>
+<div id="footer" class="boxed" > 
+
+
+<script language="JavaScript">
+<!--
+var dServer = new Date(2024,9,12,5,0,33);
+//-->
+</script>
+เวลา&nbsp;<span id="spanServerTimeSec"></span>
+<script language="JavaScript">
+<!--
+
+var dDiff = new Date();
+dDiff.setTime(dServer.getTime() - dDiff.getTime() + 1000);
+var iSrvDiffSecs = Math.floor(dDiff.getTime() / 1000);
+
+
+var oTimeDisplaySec = document.getElementById("spanServerTimeSec");
+function DisplayServerTimeSec(){
+	var d = new Date();
+	d.setSeconds(d.getSeconds() + iSrvDiffSecs);
+	var m = d.getMinutes() + "";
+	var s = d.getSeconds() + "";
+	if(m.length==1)	m = "0" + m;
+	if(s.length==1)	s = "0" + s;
+	oTimeDisplaySec.innerHTML = d.getHours() + ":" + m + ":" + s;
+}
+DisplayServerTimeSec();
+window.setInterval("DisplayServerTimeSec()", 500);
+
+//-->
+</script>
+
+
+</FONT>
+</TD>
+</TR>
+</div>
+<tr VALIGN=TOP>
+
+<td align ="center" valign ="center" width="201px">
+	<div class="boxed" > 
+		<br>
+		<A HREF=https://www.vn.co.th><IMG SRC= images/thai/logo/vn_logo.gif WIDTH=88 HEIGHT=29 BORDER=0></A>
+		<br><br>
+    </div> 
+</td>
+
+<td><br>&nbsp;&nbsp<A NAME=bottom HREF=#top><IMG SRC=images/common/button/go_top_1.gif WIDTH=129 HEIGHT=29 BORDER=0></A>
+
+	   <table border=0 width=700 class='footermenu' cellspacint=0 cellpading=0><tr><td width=5></td><td align='center'><a href=http://www.mua.go.th/ target=new><span style='text-decoration: none'>สกอ.<span></a>&nbsp;|&nbsp;<a href=http://www.studentloan.or.th/ target=new><span style='text-decoration: none'>กยศ.<span></a>&nbsp;|&nbsp;<a href=http://www.onesqa.or.th/ target=new><span style='text-decoration: none'>สมศ.<span></a>&nbsp;|&nbsp;<a href=http://www.runaheadsms.com target=new><span style='text-decoration: none'>Runahead<span></a>&nbsp;|&nbsp;<a href=http://www.vn.co.th target=new><span style='text-decoration: none'>Vision Net Co.Ltd.<span></a>&nbsp;|&nbsp;</td></tr><tr><td></td></tr></table>
+</td>
+	<table border = 0 width="930px" height="0" bgcolor="#3B3B3B">
+		<tr>
+			<td align ="center" width="200px" class='footertext'>
+				Powered by Vision Net, 1995 - 2008
+			</td>
+			<TD class='footertext'>&nbsp;&nbsp;Contact Staff : สำนักส่งเสริมวิชาการและงานทะเบียน  โทรศัพท์ 0-4372-2118 ต่อ 269  โทรสาร 0-4372-2117			<td>
+		</tr>
+	</table>
+</body>
+</html>
+
